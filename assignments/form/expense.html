@@ -15,13 +15,13 @@
         <fieldset style="width: 500px;">
             <legend>Expenses Form</legend><br>
                 <label for="date">Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="date" id="date" name="date"><br><br>
+                <input type="date" id="date" name="date" placeholder="enter expenses"><br><br>
 
                 <label for="mort">Mortgage &nbsp;&nbsp;</label>
-                <input type="number" id="mort" name="mort"><br><br>
+                <input type="number" id="mort" name="mort" placeholder="enter expenses"><br><br>
 
                 <label for="gas">Gas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" id="gas" name="gas" required><br><br>
+                <input type="text" id="gas" name="gas" required placeholder="enter expenses"><br><br>
 
                 <label for="childcare">Childcare &nbsp;</label>
                 <input type="checkbox" id = "daycare" name = "daycare" value = "daycare" checked>
@@ -45,18 +45,16 @@
                 <input type="radio" id="yearly" name="expense">
                 <label for="yearly">Yearly </label><br><br>
 
-                <label for="misc">Misc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" id="misc" name="misc">
-
-                <!--<label for="misc">Misc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>                             
-                <input list="utilities">
+                <label for="misc">Misc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>                             
+                <input list="utilities" placeholder="search here">
                 <datalist id="utilities">
                     <option value="Mobile">
                     <option value="Internet"> 
                     <option value="Electric"> 
                     <option value="Water">                          
-                </datalist>-->
-                <br><br>           
+                </datalist>                                               
+                <input type="text" id="misc" name="misc" placeholder="enter expenses"><br><br>
+
                 <input type="submit" name="save" value ="Save" onclick="alert('Monthly Expenses is Saved')";>          
         </fieldset>
     </form>
