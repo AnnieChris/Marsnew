@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Monthly Expense Report</h1>    
+
+    <form action="details.html" target="_blank">
+        <fieldset>
+            <legend>Monthly Expenses</legend>
+                <label for="date">Date </label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="mort">Mortgage </label>
+                <input type="text" id="mort" name="mort"><br><br>
+
+                <label for="gas">Gas </label>
+                <input type="text" id="gas" name="gas"><br><br>
+
+                <label for="childcare">Childcare </label>
+                
+                <label for="daycare">DayCare </label>
+                <input type="checkbox" id = "daycare" name = "daycare" value = "daycare" checked>
+                <label for="school">School </label>
+                <input type="checkbox" id = "school" name = "school" value = "school" >
+                <br><br>
+
+                <label for="insurance">Insurance </label>
+                <input type="text" id="insurance" name="insurance"><br><br>
+                
+                Expenses in
+                <input type="radio" id="monthly" name="expense" value="monthly" checked>
+                <label for="monthly">Monthly </label>
+
+                <input type="radio" id="yearly" name="expense">
+                <label for="yearly">Yearly </label><br><br>
+
+                <label for="misc">Misc </label>                             
+                <input list="utilities">
+                <datalist id="utilities">
+                    <option value="mobile">
+                    <option value="internet"> 
+                    <option value="electric"> 
+                    <option value="water">  
+                        
+                </datalist>
+                <br><br>               
+
+                <input type="submit" name="save" value ="Save" onclick="alert('Monthly Expenses is Saved')";>            
+        </fieldset>
+    </form>
+</body>
+</html>

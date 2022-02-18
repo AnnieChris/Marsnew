@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: auto;
+        }
+        table{
+            border: solid 1px;
+            border-collapse: collapse; 
+            width: 50%; 
+           
+        }
+        td {
+            border: 1px solid;        
+            padding: 10px;}
+        th{
+            background-color:#F0F2F4;
+            border: solid 1px;
+            padding: 10px;
+            
+        }
+        caption{padding: 10px;}
+        .column{
+            background-color: #F0F2F4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> Design Below Tables</h1>
+    <table>
+        <caption>Life Expentancy By Current Age</caption>
+        <tr>
+        <th colspan="2">65</th>
+        <th colspan="2">40</th>
+        <th colspan="2">20</th>
+        </tr>
+        <tr>
+            <td><b>Men</b></td>
+            <td><b>Women</b></td>
+            <td><b>Men</b></td>
+            <td><b>Women</b></td>
+            <td><b>Men</b></td>
+            <td><b>Women</b></td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>85</td>
+            <td>78</td>
+            <td>82</td>
+            <td>77</td>
+            <td>81</td>
+        </tr>
+       
+    </table>
+    <br>
+    <br>
+
+    <table>
+        <caption>Favourite and Least Favourite Things</caption>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Bob</th>
+            <th>Alice</th>
+        </tr>
+        <tr >
+            <td rowspan="2" class="column">Favorite</td>
+            <td class="column">Color</td>
+            <td>Blue</td>
+            <td>Purple</td>
+        </tr>
+        <tr>            
+            <td class="column">Flavor</td>
+            <td>Banana</td>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="column">Least Favorite</td>
+            <td class="column">Color</td>
+            <td>Yellow</td>
+            <td>Pink</td>
+        </tr>
+        <tr>            
+            <td class="column">Flavor</td>
+            <td>Mint</td>
+            <td>Walnut</td>
+        </tr>
+      
+    </table>  
+</body>
+</html>
