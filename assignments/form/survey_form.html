@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Intrest Survey Form</title>
+    <link rel="icon" href="images/surveys-icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <table border ="2" cellpadding="20" cellspacing="2" align="center" width="70%">        
+        <form method="post" action="message.html" target="_blank">
+        <caption><h1>Employee Intrest Survey Form</h1></caption>
+        <!--<thead>
+            <tr>
+                <th colspan="2">Employee Intrest Survey Form</th>
+            </tr>
+        </thead>-->
+       
+            <tr>
+                <td><label for="empname">Name</label></td>
+                <td><input type="text" name="empname" id="empname" placeholder="Enter your Name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="dept">Department</label></td>
+                <td><input type="text" name="dept" id="dept" placeholder="Enter your Department" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="content">Tell Us About Yourself</label></td>
+                <td><textarea id="content" name="content" maxlength="100" placeholder="Enter text here"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Do your excersise at home</td>
+                <td>
+                    <input type="radio" name="excersise" id="yes" required>
+                    <label for="yes">Yes</label>
+                
+                    <input type="radio" name="excersise" id="no" required>
+                    <label for="no">No</label>
+                </td>                    
+            </tr>
+
+            <tr>
+                <td>How do you like to read about your favourite topics</td>
+                <td>
+                    <input type="checkbox" name="book" id="book" >
+                    <label for="book">Books</label>
+                
+                    <input type="checkbox" name="online" id="online" >
+                    <label for="online">Online Resource</label>
+
+                    <input type="checkbox" name="phapp" id="phapp" >
+                    <label for="phapp">Phone Apps</label>
+
+                    <input type="checkbox" name="magazine" id="magazine" >
+                    <label for="magazine">Magazine</label>
+                </td>      
+            </tr>     
+            
+            <tr>
+                <td>
+                    <label for="genere">What genere of movies do you like? </label>
+                </td>
+                <td>
+                    <select required>
+                        <option value="select">Select here</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="action">Action</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+
+                </td>                  
+            </tr>
+
+               <tr>
+                   <td colspan="2" align="center">
+                       <input type="submit" name="submit" value ="Submit" onclick="alert('Form Submitted')";>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="reset" name="reset" value ="Reset" onclick="alert('Form Reseted')";>
+                    </td>
+                   
+               </tr>
+        </form>      
+    </table>   
+    
+</body>
+</html>
