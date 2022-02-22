@@ -6,45 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/expenses.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="bodycontent">
     <h1>Monthly Expense Report</h1>    
 
-    <form action="details.html" target="_blank" method="post">
-        <fieldset style="width: 500px; border: none;">
-            <legend>Expenses Form</legend><br>
-                <label for="date">Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <form class="exp" action="details.html" target="_blank" method="post">
+        <fieldset>
+            <div class="expenses">
+            
+                <label for="date">Date</label>
                 <input type="date" id="date" name="date" placeholder="enter expenses"><br><br>
 
-                <label for="mort">Mortgage &nbsp;&nbsp;</label>
+                <label for="mort">Mortgage</label>
                 <input type="number" id="mort" name="mort" placeholder="enter expenses"><br><br>
 
-                <label for="gas">Gas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label for="gas">Gas</label>
                 <input type="text" id="gas" name="gas" required placeholder="enter expenses"><br><br>
 
-                <label for="childcare">Childcare &nbsp;</label>
+                <span class="chkbox"><label for="childcare">Childcare </label>
                 <input type="checkbox" id = "daycare" name = "daycare" value = "daycare" checked>
-                <label for="daycare">DayCare &nbsp;&nbsp; </label>
+                <label for="daycare">DayCare </label>
                 <input type="checkbox" id = "school" name = "school" value = "school" >
                 <label for="school">School </label>
-                
+                </span>
                 <br><br>
 
-                <label for="insurance">Insurance &nbsp;&nbsp;</label>
+                <label for="insurance">Insurance</label>
                 <select id="insurance" name="insurance">
                     <option value="Medical">Medical</option>
                     <option value="Car">Car</option>
                     <option value="Home">Home</option>
                 </select><br><br>
                 
-                Expenses in
+                <span class="chkbox">Expenses in
                 <input type="radio" id="monthly" name="expense" value="monthly" checked>
                 <label for="monthly">Monthly </label>
 
                 <input type="radio" id="yearly" name="expense">
                 <label for="yearly">Yearly </label><br><br>
+            </span>
 
-                <label for="misc">Misc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>                             
+                <label for="misc">Misc</label>                             
                 <input list="utilities" placeholder="search here">
                 <datalist id="utilities">
                     <option value="Mobile">
@@ -54,8 +58,10 @@
                 </datalist>                                               
                 <input type="text" id="misc" name="misc" placeholder="enter expenses"><br><br>
 
-                <input type="submit" name="save" value ="Save" onclick="alert('Monthly Expenses is Saved')";>          
+                <input type="submit" name="save" value ="Save" onclick="alert('Monthly Expenses is Saved')";> 
+            </div>         
         </fieldset>
     </form>
+</div>
 </body>
 </html>

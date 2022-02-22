@@ -1,0 +1,84 @@
+/* styles for tags */
+body{
+    background-color: beige;    
+}
+div{ 
+    padding: 20px; 
+   }
+table{
+    color: rgb(87, 78, 78);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+td{ padding: 10px;}
+th{ text-transform: capitalize;}
+h1{text-align: center;}
+form{ margin: auto; width: 60%;}
+fieldset{ border: none; text-align: none;}
+label{ }
+caption{font-size: 20px; font-weight: bold;}
+p{ 
+    padding: 10px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: #126b6b;
+    font-style: italic;
+}
+span.msg{ font-size:100px; text-align: center; display: block;}
+/* styles for ids*/
+div#bodycontent{
+    background-color: rgb(236, 222, 191);
+    width: 70%;
+    margin: auto;
+    box-shadow: 10px 10px 40px rgb(207, 191, 198);    
+}
+input#monthly{margin-left: 31%;}
+/* styles for class*/
+table.survey{ text-align: left;}
+input[type=radio]:focus, input[type=radio]:hover{
+    border: 0 none;
+    background: rgb(172, 172, 201);
+    }
+form.exp{width: 100%;}    
+.expenses input{ margin: 5px; width: 20%; padding: 5px;}
+.expenses label{text-align: left; display: inline-block; width: 40%;}
+.expenses input[type=submit]{ width: 20%; margin-left: 41%;}
+.expenses input[type=text], .expenses textarea, .expenses select{ padding: 5px; width: 20% !important;}
+.expenses input[type=radio], input[type=checkbox]{}
+.chkbox{}
+.chkbox label{display: contents;}
+.chkbox input{width: 5%;}
+.chkbox input#daycare{margin-left: 33%;}
+p.even{ background-color: #cdcece; box-shadow: 2px 3px 8px rgb(90, 113, 136);}
+
+input[type=text], textarea, select
+{ 
+    width: 40%;
+    padding: 5px 10px;
+    background-color: #f3f4f5;
+}
+input:hover, select:hover, textarea:hover, input[type=submit]:hover,input[type=reset]:hover, input[type=radio]:hover, input[type=checkbox]:hover 
+{
+    background-color: #d8e6dc;
+    border: 2px solid #5ad884;
+    color: rgb(6, 100, 100);
+}
+input[type=text]:focus, textarea:focus
+{
+    background-color: #cdcece; }
+  
+input[type=submit],input[type=reset] 
+{
+    cursor: pointer; 
+    width: 10%; 
+    padding: 10px; 
+    margin: 30px 50px 30px 50px;
+    border: 2px solid #246363;
+}
+input[type=radio], input[type=checkbox]{ padding: 10px; scale:1.5; background-color: rgb(219, 136, 10);}
+input[type=radio]:checked{ background-color: red;}

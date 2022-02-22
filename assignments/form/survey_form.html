@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Intrest Survey Form</title>
     <link rel="icon" href="images/surveys-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <table cellpadding="20" cellspacing="2" align="center" width="70%">        
+    <div id="bodycontent">
+    <table class="survey">        
         <form method="post" action="message.html" target="_blank">
         <caption><h1>Employee Intrest Survey Form</h1></caption>
         <!--<thead>
@@ -79,16 +81,13 @@
 
                <tr>
                    <td colspan="2" align="center">
-                       <input type="submit" name="submit" value ="Submit" onclick="alert('Form Submitted')";>
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="submit" name="submit" value ="Submit" onclick="alert('Form Submitted')";>                      
                        <input type="reset" name="reset" value ="Reset" onclick="alert('Form Reseted')";>
                     </td>
                    
                </tr>
         </form>      
     </table>   
-    
+</div>
 </body>
 </html>

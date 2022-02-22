@@ -1,0 +1,22 @@
+body{
+    background-color: beige;
+}
+p{
+    color: rgb(61, 228, 240);
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    
+
+}
+a{
+    text-decoration:none;
+    color: crimson;
+    
+}
+
+h4{direction: rtl;
+text-indent: 10px;
+letter-spacing: 5px;
+line-height: 5px;
+}
