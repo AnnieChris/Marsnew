@@ -1,6 +1,8 @@
+/*Global style */
+*{background-color: none;}
 /* styles for tags */
 body{
-    background-color: beige;    
+    
 }
 div{ 
     padding: 20px; 
@@ -12,24 +14,68 @@ table{
     text-align: center;
 }
 td{ padding: 10px;}
-th{ text-transform: capitalize;}
-h1{text-align: center;}
+th
+{ 
+    text-transform: capitalize; 
+    background-color: rgba(230, 130, 140, 0.3); 
+    padding: 10px; 
+
+}
+
+h1
+{
+    text-align: center; 
+    color: rgb(148, 33, 33);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 form{ margin: auto; width: 60%;}
 fieldset{ border: none; text-align: none;}
-label{ }
-caption{font-size: 20px; font-weight: bold;}
+
+caption
+{
+    font-size: 20px; 
+    color: rgb(110, 6, 6);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
 p{ 
     padding: 10px; 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    
 }
+
+.paragraph p
+{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #246363;
+} 
+.paragraph p:nth-child(even) 
+{
+    background-color: #cdcece;
+  }
+  .paragraph p:nth-child(odd) 
+  {
+      /* background-color: #dfcadd; */
+    }
+    .viewport{ font-size: 1vw; color: darkred; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .keybord{ font-size:medium; color: rgb(141, 106, 18);}
 a{
     padding: 10px;
     text-decoration: none;
     color: #126b6b;
     font-style: italic;
 }
-span.msg{ font-size:100px; text-align: center; display: block;}
+ul{}
+.smileysamelist{ list-style: none;}
+.smileysamelist li::before{content: "😊"; margin: 0 15px 5px 0;}
+.smileydifferentlist{  list-style: none;}
+.smileydifferentlist li::before{ content: "🤝";margin: 0 15px 5px 0;}
+.smileydifferentlist li:nth-child(2)::before{ content: "📷";}
+.smileydifferentlist li:nth-child(3)::before{ content: "🦁";}
+.smileydifferentlist li:nth-child(4)::before{ content: "🔑";}
+
+span.msg{ font-size:100px; text-align: center; display: block; }
 /* styles for ids*/
 div#bodycontent{
     background-color: rgb(236, 222, 191);
@@ -38,7 +84,9 @@ div#bodycontent{
     box-shadow: 10px 10px 40px rgb(207, 191, 198);    
 }
 input#monthly{margin-left: 31%;}
+
 /* styles for class*/
+
 table.survey{ text-align: left;}
 input[type=radio]:focus, input[type=radio]:hover{
     border: 0 none;
@@ -54,8 +102,8 @@ form.exp{width: 100%;}
 .chkbox label{display: contents;}
 .chkbox input{width: 5%;}
 .chkbox input#daycare{margin-left: 33%;}
-p.even{ background-color: #cdcece; box-shadow: 2px 3px 8px rgb(90, 113, 136);}
-
+ li.smiley{ }
+.textalignleft{text-align: left;}
 input[type=text], textarea, select
 { 
     width: 40%;

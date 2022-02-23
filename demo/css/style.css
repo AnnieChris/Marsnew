@@ -1,12 +1,11 @@
+*{ margin: auto;}
 body{
     background-color: beige;
 }
 p{
     color: rgb(61, 228, 240);
     text-transform: capitalize;
-    text-align: center;
-    text-shadow: 2px 2px 5px red;
-    
+    text-align: center;  
 
 }
 a{
@@ -20,3 +19,34 @@ text-indent: 10px;
 letter-spacing: 5px;
 line-height: 5px;
 }
+
+.fontred{ color: red; }
+
+.fontgreen{color: green;}
+div.fontgreen{ color: greenyellow; background-color: grey;}
+
+div > p /* p tag is the imediate parent of div tag */
+{ 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 3px rgb(175, 160, 160);
+    background-color: aqua;
+}
+div+p /* p tag is immediate after div tag */
+{
+    font-size: small;
+
+}
+
+p ~ div {
+    background-color: gold;
+}
+
+#csscolorsrgb p { color: brown; background-color: rgb(200, 160, 160)}
+#csscolorsrgba p{color: green; background-color: rgba(250, 60, 90, 0.4); }
+#csscolorshex p{ color: yellow; background-color: #23899d;}
+#csscolorshexshort p{ color: orange ; background-color: #23d;}
+#csscolorshsl p{ color: black ; background-color:hsl(80, 90%, 70%);}
+#csscolorshsla p{ color:deeppink; background-color: hsla(80, 90%,70%, 0.2);}
+
+#background p{ background-color: brown;
+background-image: none;}
