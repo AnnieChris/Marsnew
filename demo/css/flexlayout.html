@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+ .flexcontainer{
+    background-color: antiquewhite;
+   padding: 3em;
+}
+.flexcontainer1{
+    background-color: lavender;
+    padding: 3em;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.cell{
+    background-color: aquamarine;
+    
+}
+.flex > .cell{ 
+    padding: 10px;
+    flex-grow: 3;
+    
+}
+.flex > .cell:nth-child(2){ 
+    flex-grow: 1; /* flex grow wont work if the parent element dont have display : flex */
+    background-color: lightslategrey;
+
+}
+    </style>
+</head>
+<body>
+    <div class="flexcontainer flex">
+        <div class="cell">This is the first cell of the flex item</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+
+
+    </div>
+    <!-- Content giving size to the div tag so that we have some empty spaces filling the page -->
+    <div class="flexcontainer1 flex">
+        <div class="cell">This is the first cell of the flex item</div>
+        <div class="cell">This is the Second cell of the flex item</div>
+        <div class="cell">This is the Third cell of the flex item</div>
+        <div class="cell">This is the Fourth cell of the flex item</div>
+        <div class="cell">This is the Fifth cell of the flex item</div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,11 +1,11 @@
-*{ margin: auto;}
+
 body{
     background-color: beige;
 }
 p{
-    color: rgb(61, 228, 240);
+    
     text-transform: capitalize;
-    text-align: center;  
+      
 
 }
 a{
@@ -29,7 +29,7 @@ div > p /* p tag is the imediate parent of div tag */
 { 
     text-transform: uppercase; 
     text-shadow: 2px 2px 3px rgb(175, 160, 160);
-    background-color: aqua;
+    
 }
 div+p /* p tag is immediate after div tag */
 {
@@ -38,7 +38,7 @@ div+p /* p tag is immediate after div tag */
 }
 
 p ~ div {
-    background-color: gold;
+    
 }
 
 #csscolorsrgb p { color: brown; background-color: rgb(200, 160, 160)}
@@ -50,3 +50,76 @@ p ~ div {
 
 #background p{ background-color: brown;
 background-image: none;}
+
+/* Navigation */
+
+.parent{
+    border: 2px solid;
+    }
+  
+.box{
+    display: inline;
+    background-color: rgb(168, 167, 241);
+
+}
+#one{
+background-color: firebrick;
+top: 20px;
+}
+
+.overflow{
+    background-color:rgb(175, 160, 160);
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+    border: 2px solid;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    float: right;
+    
+}
+
+#div4{
+    float: right;
+    padding: 10px;
+    border: 2px solid;
+}
+#div5{
+    clear: right;
+    padding: 10px;
+    border: 2px solid;
+}
+
+#noclear{
+    border: 2px solid;
+    overflow: auto;
+}
+
+#img1{
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+#box1{
+    margin-top: 200px;
+    border: 2px solid;
+    padding: 20px;
+    width: 200px;
+}
+
+/* Flex */
+
+.container{ 
+    padding: 1em; 
+    background-color: darkseagreen;
+}
+.flex{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap ;
+}
+.flex > .cell{ flex-grow: 3;}
