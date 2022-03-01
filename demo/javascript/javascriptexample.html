@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txtid">before script</p>
+    <br>
+    <p>after script</p>
+
+    <br>
+    Username <input type="text" id="username" size="20">
+    <br><br>
+    Password <input type="password" id="passwd" size="20">
+    <br><br>
+    <button onclick="changecolor()"> Click here</button>
+
+    <br><br>
+
+    First Number<input type="number" id="first" size="20">
+    <br><br>
+    Second Number<input type="number" id="second" size="20">
+    <br><br>
+    Result<input type="number" id="result" size="20">
+    <br><br>
+    <button onclick="getsum()">Sum...</button>
+
+
+</body>
+<script>
+    // alert("Executing script within html");
+    console.log("Executing script within console"); //show messegae in the console box in the browser
+    function changecolor()
+    {
+        var uname = document.getElementById("username").value;
+        var pwd = document.getElementById("passwd").value;
+        if(uname == '' || pwd == '')
+        {
+            alert(" Username or password should not be blank")
+        }
+        else
+        {
+            alert("Welcome to my page"+ uname)
+        }
+      
+        document.body.style.backgroundColor="pink";
+        document.getElementById("txtid").innerHTML = "Afer button clicked";
+    }
+    function getsum()
+    {
+            var a,b,c;
+            a = Number(document.getElementById("first").value);      //Number Keyword is used to tell js its a number not string
+            b = Number(document.getElementById("second").value);
+            c = a+b;
+            document.getElementById("result").value = c;
+    }
+    
+
+</script>
+</html>
