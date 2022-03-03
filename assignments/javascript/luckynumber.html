@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+    <script src="luckynumber.js"></script>
+    <style>
+        body{background-color: rgb(152, 187, 152);}
+
+        .bodycontent{ 
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            row-gap: 1em;
+            
+        }
+        h1{
+            text-transform: uppercase;
+        }
+        #mylcknum{
+            background-color: rgb(152, 230, 230);
+            max-width: 15em;
+            padding: 10px;
+        }
+        #chkbtn{
+            background-color: rgb(240, 196, 130);
+            max-width: 15em;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 20px;
+            border: 2px solid;
+        }
+        #display_result{
+            background-color: rgb(230, 172, 172);
+            max-width: 15em;
+            max-height: 10em;
+           
+        }
+        #count_display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="bodycontent">
+    <h1>Guess my number Game</h1>
+    <p>Choose any number from 0 to 10 </p>
+    <label for="lcknum">Guess my Lucky Number</label>
+    <input type="number" name="lcknum" id="mylcknum" min="0" max="10" placeholder="enter number" >
+    <button id="chkbtn" onclick="numcheck()"> Check </button>
+   <!-- <p id="count_display">Button Clicked</p> -->
+    <p id="display_result"></p>
+</div>
+</body>
+</html>
