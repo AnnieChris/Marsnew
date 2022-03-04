@@ -32,15 +32,17 @@
             margin-top: 20px;
             border: 2px solid;
         }
-        #display_result{
+        .display_result{
             background-color: rgb(230, 172, 172);
             max-width: 15em;
             max-height: 10em;
-           
+            padding: 10px;           
         }
         #count_display{
             display: none;
         }
+
+        
     </style>
 </head>
 <body>
@@ -51,7 +53,7 @@
     <input type="number" name="lcknum" id="mylcknum" min="0" max="10" placeholder="enter number" >
     <button id="chkbtn" onclick="numcheck()"> Check </button>
    <!-- <p id="count_display">Button Clicked</p> -->
-    <p id="display_result"></p>
+    <p id="result"></p>
 </div>
 </body>
 </html>
