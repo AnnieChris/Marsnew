@@ -214,5 +214,82 @@ console.log(results);
  */
 
 
-//Map Method
+/* //Map Method
+let ages = [20,35,42,56,69,73];
+ */
 
+
+
+
+
+
+
+
+
+//Javascript Objects
+
+/* let person = {
+    firstName:'Ani',
+    lastName:'Chris',
+    family()
+    {
+        console.log('Family is all about');
+    }
+}
+
+console.log(person.firstName +" "+ person.lastName);
+person.country = 'India';
+console.log("Before",person);
+
+//delete person.country;
+//console.log("After",person);
+//console.log("lastName" in person);
+
+for(const key in person)
+{
+    console.log(key+": ",person[key]);
+}
+person.family(); */
+
+
+
+
+/* //Jvascript Constructor
+
+function person(fname, lname, a)        //constructor function
+{
+    this.firstName = fname;
+    this.lastName = lname;
+    this.age = a;
+    this.getInfo = function()
+    {
+        return this.lastName + " The Age is " + this.age;
+    }
+}
+
+let person1 = new person('John','Doe',30);
+let person2 = new person('David','Parker',30);
+console.log(person1);
+console.log(person2);
+console.log(person2.getInfo()); */
+
+
+
+/* var js = (function(x) {return x*x;}(10));
+console.log(js); */
+
+
+//day 6
+function f(){
+    return this;
+}
+//console.log(f());
+
+let person ={
+    firstname : "John",
+    lastname : "Dewy",
+    f:funstion getDetail()
+    {
+        return this.firstname + " " + this.lastname;
+    }
+}

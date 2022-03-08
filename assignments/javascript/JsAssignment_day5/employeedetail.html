@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="employeedetails.js"></script>
+    
+</head>
+<body>
+    <div class="bodycontents">
+        <table>
+        <form method="post" action="employeesummary.html" target="blank" id="employeeForm" onsubmit="validateform()">
+            <caption><h1>Employee Details</h1></caption>
+            <tr>
+                <td><label for="empname">Name : </label></td>
+                <td><input type="text" id="empname" name="empname" placeholder="enter Name" class="boxstyle" required></td>
+                <td><div class="error"></div></td>
+            </tr>
+            
+            <tr>
+                <td><label for="empid">Employee ID : </label></td>
+                <td><input type="number" id="empid" name="empid" placeholder="enter employee Id" class="boxstyle" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="joindate">Joining Date : </label></td>
+                <td><input type="date" id="jdate" name="joindate" placeholder="enter Joining date" class="boxstyle" max="2022-12-31" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="hoursworked">Hours Worked : </label></td>
+                <td><input type="number" id="hrswrkd" name="hoursworked" placeholder="enter hours" class="boxstyle" required></td>
+            </tr>
+
+            
+            <tr>
+                <td><label for="desig" >Designation : </label></td>
+                <td>
+                    <select id="desig" name="desig" class="boxstyle" required>
+                        <option value="">---- Select ----</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Consultant">Consultant</option>
+                        <option value="Trainee">Trainee</option>
+                    </select>
+                    <br><br>
+                    
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button"  onclick="saveEmployeeDetails()">Submit</button>
+                </td>
+           
+                <td>
+                    <button type="reset" class="clrbtn">Clear</button>
+                </td>
+            </tr>         
+           
+        </form>
+        
+        </table>
+        
+
+    </div>
+    <script>
+        setMaxDate();
+    </script>
+    
+</body>
+</html>
