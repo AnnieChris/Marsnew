@@ -1,0 +1,64 @@
+body{
+    background-color: darkgrey;
+    background-image: url(images/tulip.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: center;
+    backface-visibility: hidden;
+}
+
+.bodycontents{
+    display: flex;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+}
+.bodycontents h1{
+    text-transform: uppercase;
+}
+table
+{
+    
+    padding: 10px;
+    width: 800px;  
+}
+td{
+    
+    padding: 10px;
+}
+
+button{
+    padding: 10px 30px;
+    max-width: 100px;
+    background-color: azure;
+    border-radius: 18px;
+    
+}
+
+.boxstyle{
+    padding: 10px;
+    width: 50%;
+    background-color: azure;
+}
+.boxstyle:hover, button:hover{
+    background-color: rgb(226, 210, 241);
+    box-shadow: 1px 2px 5px rgb(183, 98, 240);
+}
+.boxstyle:focus{ background-color:ghostwhite;}
+.clrbtn{
+    width: 40%;
+}
+
+.innerstyle{
+    padding: 20px;
+    display:inline-flex;
+}
+.empsum{
+    
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
+#empSummary{ font-style: italic;}
+#desig{width: 55%;}

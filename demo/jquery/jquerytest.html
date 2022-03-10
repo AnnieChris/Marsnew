@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <p>Click here</p>
+    <p>Welcome</p>
+     <!-- <script>
+        $("p").click(function(){
+            $("p").text("Jquery in action");        //p tag text is replaced by the .text("message");
+            $("h1").slideToggle();      //toggles the h1 tag
+        })
+    </script> -->
+
+   <button> Click </button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").slideToggle();
+            })
+           
+        })
+        $("p").click(function(){
+            $("h1").text("ready function is performed");
+        })
+    </script>  
+        
+    <script>
+        function add(x,y,z){
+            let sum = x+y+z;
+            console.log(sum);
+        }
+
+    </script>
+
+
+</body>
+</html>
