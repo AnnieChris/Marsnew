@@ -280,16 +280,32 @@ console.log(js); */
 
 
 //day 6
-function f(){
+/* function f(){
     return this;
-}
+} */
 //console.log(f());
 
-let person ={
+/* let person ={
     firstname : "John",
     lastname : "Dewy",
-    f:funstion getDetail()
+}f:funstion getDetail()
     {
         return this.firstname + " " + this.lastname;
     }
-}
+} */
+
+/* //JavaScript Hoisting
+console.log(a);  // Javascript sees line by line execution. here we will get error since a is not intialized before execution
+let a = 1;
+ */
+
+/* var a= 5, b=1;
+var obj ={ a : 10}
+with(obj){
+    console.log(b);
+} */
+
+var quiz=[1,2,3];
+var js=[6,7,8];
+var result = quiz.concat(js);
+document.writeln(result);
