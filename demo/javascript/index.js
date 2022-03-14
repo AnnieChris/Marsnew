@@ -52,7 +52,9 @@ console.log(test@);  */
 
 
 
-
+/* var a = true + true + true * 3;  // 1+1+1*3 =>1+1+(1*3)
+console.log(a);
+console.log(typeof a); */
 
 
 
@@ -305,7 +307,33 @@ with(obj){
     console.log(b);
 } */
 
-var quiz=[1,2,3];
-var js=[6,7,8];
-var result = quiz.concat(js);
-document.writeln(result);
+ function getUsers(){
+    let users = [];
+    users = [
+        {username: 'John', emai : 'john@test.com' },
+        {username: 'Mark', emai : 'mark@test.com' }
+    ]
+}
+function findUser(username){
+    const users = getUsers();
+    const user = users.find((user)=>user.username===username);
+    return user;
+} 
+
+/* function setup() {
+    var names = [];
+    var name = {firstname: "", lastname: ""};
+  
+    name.firstname = "John";
+    name.lastname = "Doe";
+    names.push(name);
+  
+    name.firstname = "Bill";
+    name.lastname = "Smith";
+    names.push(name);
+  
+    return names;
+  }
+  
+  var temp = setup();
+  console.log(temp[0].firstname); */

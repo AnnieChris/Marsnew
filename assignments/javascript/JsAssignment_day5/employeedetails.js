@@ -7,10 +7,10 @@ const empdetails = {
     designation:''};
 
 const sessionStorage = window.sessionStorage;
+let salary;
 function saveEmployeeDetails()
 {
     sessionStorage.clear();
-        let salary;
         empdetails.ename = document.getElementById('empname').value;
         empdetails.eid = document.getElementById('empid').value;
         empdetails.joindate = document.getElementById('jdate').value;
@@ -33,11 +33,11 @@ function retrieveEmployeeDetails()
 {    
     let empDetails = JSON.parse(sessionStorage.empDetails);
         console.log(empDetails.ename);
-        if(empdetails.designation == 'Manager')
+        if(empDetails.designation == 'Manager')
         {
             salary=90;
         }
-        else if(empdetails.designation == 'Consultant')
+        else if(empDetails.designation == 'Consultant')
         {
             salary=70;
         }
@@ -46,7 +46,7 @@ function retrieveEmployeeDetails()
             salary=45;
         }
   
-        document.getElementById('empSummary').innerHTML=empDetails.ename +" who is a "+empDetails.designation+" will get $"+(((Number)(empDetails.hoursworked))*salary);
+        document.getElementById('empSummary').innerHTML = empDetails.ename +" who is a "+empDetails.designation+" will get $"+(((Number)(empDetails.hoursworked))*salary);
         
 }
 function validateform()

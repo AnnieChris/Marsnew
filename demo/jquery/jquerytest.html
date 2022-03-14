@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 </head>
 <body>
     <h1>Home Page</h1>
-    <p>Click here</p>
+    
     <p>Welcome</p>
+    <button onclick="">Click</button>
+
      <!-- <script>
         $("p").click(function(){
             $("p").text("Jquery in action");        //p tag text is replaced by the .text("message");
@@ -18,7 +21,7 @@
         })
     </script> -->
 
-   <button> Click </button>
+   <!-- <button> Click </button>
     <script>
         $(document).ready(function(){
             $("button").click(function(){
@@ -37,7 +40,28 @@
             console.log(sum);
         }
 
+    </script> -->
+
+    <script>
+        function getData(){
+            $.ajax({
+                url:'https://gorest.co.in/public/v2/users',
+                type: 'GET',
+                data:{
+                    key:value,
+                },
+                success:function(data)
+                {
+                    console.log(data);
+                },
+                error:function(data)
+                {
+                    console.log(data);
+                }
+            })
+        }
     </script>
+
 
 
 </body>
