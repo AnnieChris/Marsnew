@@ -40,7 +40,7 @@ const quizItems =
         option4 : "All of the above",
         answer : "All of the above"
     },
-  {
+    /* {
         question : "How can a datatype be declared to be a constant type?",         //question 6
         option1 : "const", 
         option2 : "var",
@@ -79,71 +79,44 @@ const quizItems =
         option3 : "Object",
         option4 : "Integer",
         answer :  "Object"
-    }
+    }  */
 ];
 
 //console.log(quizItems[0]);
 let questionnumber = -1;
 let correctanswers = 0;
 
-function quizquestions()
+function submitQstn()
 {
     questionnumber = questionnumber+1;
-   if(questionnumber < quizItems.length)
-   {
-    document.getElementById('quizs').innerHTML = quizItems[questionnumber].question 
-                                                    + "<br><input type='radio' id='opt1' name='choice' value = '"+quizItems[questionnumber].option1+"'><label for='opt1'>"+quizItems[questionnumber].option1+"</label>" 
-                                                    + "<br><input type='radio' id='opt2' name='choice'value = '"+quizItems[questionnumber].option2+"'/><label for='opt2'>"+quizItems[questionnumber].option2+"</label>" 
-                                                    + "<br><input type='radio' id='opt3' name='choice' value = '"+quizItems[questionnumber].option3+"'/><label for='opt3'>"+quizItems[questionnumber].option3+"</label>" 
-                                                    + "<br><input type='radio' id='opt4' name='choice'value = '"+quizItems[questionnumber].option4+"'/><label for='opt4'>"+quizItems[questionnumber].option4+"</label>";
-
-    document.getElementById('nxtBtn').disabled=true;
-    document.getElementById('subBtn').disabled=false;
-   }
-   else{
-    getscore()
-   }
+    if(questionnumber>0 && document.querySelector('input[name="choice"]:checked')== null)
+    {
+        alert("Please Select");
+        return;
+    }
+    
+    if(questionnumber>0){
+        let selectedAnswer = document.querySelector('input[name="choice"]:checked').value;
+        if(selectedAnswer == quizItems[questionnumber-1].answer)
+        {
+            correctanswers = correctanswers+1;      
+        }
+    }
+    if(questionnumber < quizItems.length)
+    {
+        document.getElementById('quizs').innerHTML = quizItems[questionnumber].question 
+                                                        + "<br><input type='radio' id='opt1' name='choice' value = '"+quizItems[questionnumber].option1+"'><label for='opt1'>"+quizItems[questionnumber].option1+"</label>" 
+                                                        + "<br><input type='radio' id='opt2' name='choice'value = '"+quizItems[questionnumber].option2+"'/><label for='opt2'>"+quizItems[questionnumber].option2+"</label>" 
+                                                        + "<br><input type='radio' id='opt3' name='choice' value = '"+quizItems[questionnumber].option3+"'/><label for='opt3'>"+quizItems[questionnumber].option3+"</label>" 
+                                                        + "<br><input type='radio' id='opt4' name='choice'value = '"+quizItems[questionnumber].option4+"'/><label for='opt4'>"+quizItems[questionnumber].option4+"</label>";
+        
+    }
+    else{
+     getscore()
+    }
 }
 function getscore()
 {
     document.getElementById('quizs').innerHTML = "Your Score is " + correctanswers+"/"+quizItems.length; 
     document.getElementById('nxtBtn').style.display = "none";
-    document.getElementById('subBtn').style.display = "none";
-}
-
-function submitQstn()
-{
-
-    if(document.querySelector('input[name="choice"]:checked')== null)
-    {
-        alert("Please Select");
-        return;
-    }
-    document.getElementById('subBtn').disabled=true;
-    let radioBtns = document.getElementsByName('choice');
-    let labelId;
-    //console.log(radioBtns.length);
-    for(let i=0; i<radioBtns.length; i++)
-    {
-        //console.log((radioBtns[i]).id);
-        labelId = radioBtns[i].id;
-        document.querySelector('label[for="'+labelId+'"]').classList.remove("wrongAnswer");
-        if(radioBtns[i].value == quizItems[questionnumber].answer)
-        {
-
-            document.querySelector('label[for="'+labelId+'"]').classList.add("correctAnswer");
-        }
-    }
-
-    let selectedAnswer = document.querySelector('input[name="choice"]:checked').value;
-    if(selectedAnswer != quizItems[questionnumber].answer)
-    {
-        let labelId = document.querySelector('input[name="choice"]:checked').id;
-        document.querySelector('label[for="'+labelId+'"]').classList.add("wrongAnswer");
-    }
-    else
-    {
-        correctanswers = correctanswers+1;
-    }
-    document.getElementById('nxtBtn').disabled=false;
 }

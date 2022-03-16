@@ -18,7 +18,7 @@ section{
     height: 320px;
     
 }
-.correctAnswer{
+/* .correctAnswer{
     color:green;
     background-color: rgb(169, 206, 169);
     width: 50%;
@@ -29,7 +29,7 @@ section{
     background-color: rgb(231, 158, 158);
     width: 50%;
 }
-
+ */
 input,label{
     padding: 10px;
 }
@@ -38,7 +38,8 @@ button{
     padding: 10px !important;
     width: 100px !important;
 }
-
+#submitanswer button{ display: none;}
+#nextquestion button{ display: block;}
 
 #submitanswer button, #nextquestion button:enabled{ 
     background-color: rgb(52, 42, 109);
