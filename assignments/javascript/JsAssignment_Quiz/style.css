@@ -11,12 +11,11 @@ section{
     margin: auto;
     background-color: rgb(213, 239, 248);
     background-image: url(images/quiz1.jpg);
-    background-size: 430px;
+    background-size: 300px;
     background-repeat: no-repeat;
-    background-position-y: 50px;
-    background-position-x: 482px;
+    background-position-y: 80px;
+    background-position-x: 500px;
     height: 320px;
-    
 }
 .correctAnswer{
     color:green;
